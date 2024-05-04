@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-25T19:49:57 IST" name="Default suite" finished-at="2024-04-25T19:50:13 IST" duration-ms="16749">
+    <groups>
+    </groups>
+    <test started-at="2024-04-25T19:49:57 IST" name="Default test" finished-at="2024-04-25T19:50:13 IST" duration-ms="16749">
+      <class name="Test.ExtentReport">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Test.ExtentReport@74235045]" started-at="2024-04-25T19:49:56 IST" name="setUp" finished-at="2024-04-25T19:49:57 IST" duration-ms="692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setTest()[pri:0, instance:Test.ExtentReport@74235045]" started-at="2024-04-25T19:49:57 IST" name="setTest" finished-at="2024-04-25T19:50:04 IST" duration-ms="7076" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTest -->
+        <test-method signature="Test1()[pri:0, instance:Test.ExtentReport@74235045]" started-at="2024-04-25T19:50:04 IST" name="Test1" finished-at="2024-04-25T19:50:09 IST" duration-ms="5633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method signature="Test2()[pri:0, instance:Test.ExtentReport@74235045]" started-at="2024-04-25T19:50:09 IST" name="Test2" finished-at="2024-04-25T19:50:13 IST" duration-ms="3733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+        <test-method is-config="true" signature="exit1()[pri:0, instance:Test.ExtentReport@74235045]" started-at="2024-04-25T19:50:13 IST" name="exit1" finished-at="2024-04-25T19:50:13 IST" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exit1 -->
+        <test-method is-config="true" signature="exit()[pri:0, instance:Test.ExtentReport@74235045]" started-at="2024-04-25T19:50:13 IST" name="exit" finished-at="2024-04-25T19:50:14 IST" duration-ms="1056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exit -->
+      </class> <!-- Test.ExtentReport -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
