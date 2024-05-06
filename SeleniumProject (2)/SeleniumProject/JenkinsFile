@@ -27,12 +27,7 @@ pipeline {
     }
       post {
         always {
-            // Clean up any temporary files or resources
-            
-                steps {
                     bat 'mvn clean'
-                }
-            
         }
     }    
 }
