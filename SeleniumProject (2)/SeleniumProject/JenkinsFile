@@ -8,18 +8,15 @@ pipeline {
         
         stage('Build') {
             steps {
-               
                 bat 'mvn install'
             }
         }
         
         stage('Test') {
             steps {
-               
-                bat 'mvn -Dtest=AmazonTest test'
+                bat 'mvn test'
             }
             post {
-                
                 failure {
                     echo 'Selenium tests failed! Failing the pipeline.'
                     currentBuild.result = 'FAILED'
