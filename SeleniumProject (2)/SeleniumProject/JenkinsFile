@@ -27,7 +27,9 @@ pipeline {
     }
       post {
         always {
+             dir('SeleniumProject (2)/SeleniumProject/SeleniumProject') {
                     bat 'mvn clean'
+            }
         }
     }    
 }
