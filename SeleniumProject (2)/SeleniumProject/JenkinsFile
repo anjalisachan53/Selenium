@@ -24,13 +24,13 @@ pipeline {
                 }
             }
         }
-    }
-      post {
-        always {
-             dir('SeleniumProject (2)/SeleniumProject/SeleniumProject') {
+        stage('Clean'){
+            steps{
+                 dir('SeleniumProject (2)/SeleniumProject/SeleniumProject') {
                     bat 'mvn clean'
+                }
             }
         }
-    }    
+    }
 }
 
