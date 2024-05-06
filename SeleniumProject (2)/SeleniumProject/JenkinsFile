@@ -15,7 +15,7 @@ pipeline {
         stage('Test') {
             steps {
                 dir('SeleniumProject (2)/SeleniumProject/SeleniumProject') {
-                    bat 'mvn -Dtest=AmazonTest test'
+                    bat 'mvn -Dtest=AmazonTestNg test'
                 }
             }
             post {
