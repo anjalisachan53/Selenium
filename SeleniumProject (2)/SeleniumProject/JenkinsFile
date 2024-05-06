@@ -25,10 +25,6 @@ pipeline {
             }
         }
         }
-         post {
-        always {
-                bat 'mvn clean' 
-            }
-        }
+        
     }
 
