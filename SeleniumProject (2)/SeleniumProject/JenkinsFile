@@ -27,9 +27,7 @@ pipeline {
         }
          post {
         always {
-            steps {
                 bat 'mvn clean' 
-                }
             }
         }
     }
