@@ -17,6 +17,8 @@ public class AmazonTest {
 		amazonsearch();
 	}
 
+	//just a new line to test triggers of jenkins
+	
 	public static void amazonsearch() {
 		driver= new ChromeDriver();
 		//driver = new FirefoxDriver();
