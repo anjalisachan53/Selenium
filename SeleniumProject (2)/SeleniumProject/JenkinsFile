@@ -4,34 +4,39 @@ pipeline {
         maven 'Maven'
     }
     stages {
-       
-        
         stage('Build') {
             steps {
-                bat 'mvn install'
+                // Change to the directory containing the Maven project
+                dir('SeleniumProject (2)/SeleniumProject/SeleniumProject') {
+                    // Compile and package your Selenium project
+                    bat 'mvn install'
+                }
+            }
+            post {
+                always {
+                    // Clean up temporary files or resources
+                    bat 'mvn clean'
+                }
             }
         }
         
         stage('Test') {
             steps {
-                bat 'mvn test'
+                // Change to the directory containing the Maven project
+                dir('SeleniumProject (2)/SeleniumProject/SeleniumProject') {
+                    // Run Selenium tests using TestNG
+                    bat 'mvn test'
+                }
             }
             post {
                 failure {
                     echo 'Selenium tests failed! Failing the pipeline.'
-                   
+                }
+                always {
+                    // Clean up temporary files or resources
+                    bat 'mvn clean'
                 }
             }
         }
     }
-    
-   post {
-        always {
-            // Clean up temporary files or resources
-            steps {
-                bat 'mvn clean' 
-                }
-            }
-        }
-    }
-
+}
