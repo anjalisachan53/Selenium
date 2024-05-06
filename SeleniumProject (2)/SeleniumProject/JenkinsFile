@@ -19,7 +19,7 @@ pipeline {
             post {
                 failure {
                     echo 'Selenium tests failed! Failing the pipeline.'
-                    currentBuild.result = 'FAILED'
+                   
                 }
             }
         }
