@@ -4,25 +4,25 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Checkout the source code from your GitHub repository
-                git ''
+               
+                git 'https://github.com/anjalisachan53/Selenium/tree/main/SeleniumProject (2)/SeleniumProject/SeleniumProject'
             }
         }
         
         stage('Build') {
             steps {
-                // Use Maven to compile the Selenium project
-                bat 'mvn clean test-compile'
+               
+                bat 'mvn install'
             }
         }
         
         stage('Test') {
             steps {
-                // Execute the AmazonTest.java test case
+               
                 bat 'mvn -Dtest=AmazonTest test'
             }
             post {
-                // Fail the pipeline if any tests fail
+                
                 failure {
                     echo 'Selenium tests failed! Failing the pipeline.'
                     currentBuild.result = 'FAILED'
@@ -33,7 +33,7 @@ pipeline {
     
     post {
         always {
-            // Clean up any temporary files or resources
+            
             stage('Clean Up') {
                 steps {
                     bat 'mvn clean'
