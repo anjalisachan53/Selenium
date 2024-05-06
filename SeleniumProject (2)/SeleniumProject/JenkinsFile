@@ -24,7 +24,16 @@ pipeline {
                 }
             }
         }
-        }
-        
     }
+      post {
+        always {
+            // Clean up any temporary files or resources
+            stage('Clean Up') {
+                steps {
+                    bat 'mvn clean'
+                }
+            }
+        }
+    }    
+}
 
