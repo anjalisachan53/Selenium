@@ -1,13 +1,10 @@
 pipeline {
     agent any
-    
+    tools {
+        maven 'Maven'
+    }
     stages {
-        stage('Checkout') {
-            steps {
-               
-                git 'https://github.com/anjalisachan53/Selenium/tree/main/SeleniumProject (2)/SeleniumProject/SeleniumProject'
-            }
-        }
+       
         
         stage('Build') {
             steps {
@@ -31,14 +28,13 @@ pipeline {
         }
     }
     
-    post {
+   post {
         always {
-            
-            stage('Clean Up') {
-                steps {
-                    bat 'mvn clean'
+            // Clean up temporary files or resources
+            steps {
+                bat 'mvn clean' 
                 }
             }
         }
     }
-}
+
