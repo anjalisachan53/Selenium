@@ -3,7 +3,7 @@ pipeline {
     tools {
         maven 'Maven'
     }
-    
+    //added comment to test trigger
 
     stages {
         stage('Build') {
