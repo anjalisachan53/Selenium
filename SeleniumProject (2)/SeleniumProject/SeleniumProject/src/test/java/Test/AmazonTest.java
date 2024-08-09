@@ -17,7 +17,7 @@ public class AmazonTest {
 		amazonsearch();
 	}
 
-	//added a comment to test triggers of jenkins
+	//added comment to test triggers of jenkin
 	
 	public static void amazonsearch() {
 		driver= new ChromeDriver();
