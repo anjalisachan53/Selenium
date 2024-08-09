@@ -10,7 +10,7 @@ import pageobject.AmazonPage;
 import pageobject.AmazonPage2;
 
 public class AmazonPageTest2 {
-
+	// comment for trigger
 	static WebDriver driver=null;
 
 	public static void main(String[] args)
